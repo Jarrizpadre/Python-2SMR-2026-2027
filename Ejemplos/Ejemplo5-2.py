@@ -1,18 +1,12 @@
 
-num1 = int(input("Ingrese el primer número: "))
-num2 = int(input("Ingrese el segundo número: "))
-op = input("Ingrese la operación a realizar:")
-if op == "+":
-    print("El resultado de la suma es: ", num1 + num2)
+import random
 
-elif op == "-":
-    print("El resultado de la resta es: ", num1 - num2)
+num_adivinar = random.randint(1, 10)
+intentos = 3
 
-elif op == "*":
-    print("El resultado de la multiplicación es: ", num1 * num2)
+val = int(input("Adivina un número entre 1 y 10: "))
 
-elif op == "/":
-    if num2 == 0:
-        print("No se puede dividir entre cero")
-    else:
-        print("El resultado de la división es: ", num1 / num2)
+if val == num_adivinar:
+    print("¡Felicidades! Adivinaste el número.")
+else:
+    print
